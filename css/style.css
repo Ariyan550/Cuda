@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; }
+
+ul li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff url(../Magnify-1s-200px.gif) no-repeat center;
+  z-index: 99999; }
+
+#scrollup {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  color: white;
+  background: tomato;
+  padding: 5px;
+  border-radius: 20%;
+  display: none; }
+
+@keyframes btn {
+  25% {
+    padding: 10px 35px; }
+  50% {
+    padding: 10px 30px; }
+  100% {
+    padding: 10px 15px;
+    border-radius: 15px;
+    background: tomato; } }
+
+#header-section {
+  background: linear-gradient(rgba(135, 80, 156, 0.8), rgba(135, 80, 156, 0.8)), url(../resources/css/img/contact-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 90vh; }
+  #header-section #circle {
+    width: 35px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 8rem;
+    position: relative; }
+    #header-section #circle::after {
+      content: "";
+      background: tomato;
+      display: block;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      animation-name: animate;
+      animation-duration: 1s;
+      animation-iteration-count: infinite; }
+
+@keyframes animate {
+  50% {
+    top: 20%; }
+  80% {
+    top: 80%; }
+  100% {
+    width: 7px;
+    height: 7px; } }
+  #header-section .navbar-nav a {
+    color: white;
+    font-size: 15px;
+    padding: 0px 20px; }
+  #header-section .main-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    #header-section .main-header h1 {
+      color: white;
+      word-spacing: 5px; }
+    #header-section .main-header .ct {
+      margin-top: 20px; }
+    #header-section .main-header button {
+      background: #eb7d4b;
+      border: none;
+      padding: 10px 35px;
+      border-radius: 3px;
+      font-size: 13px;
+      color: white;
+      border-bottom: 2px solid #ce6e42;
+      animation-name: btn;
+      animation-duration: 4s;
+      animation-iteration-count: infinite; }
+
+#services-section {
+  text-align: center;
+  background: linear-gradient(rgba(23, 194, 164, 0.8), rgba(23, 194, 164, 0.8)), url(../resources/css/img/services-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem 0rem; }
+  #services-section h2 {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 6px;
+    padding: 20px 0px; }
+    #services-section h2::after {
+      content: "";
+      display: block;
+      background: tomato;
+      width: 8.5rem;
+      height: .3rem;
+      margin: auto;
+      margin-top: 2rem; }
+  #services-section p {
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    word-spacing: 4px; }
+  #services-section .box {
+    margin-top: 5rem; }
+  #services-section .box h3 {
+    color: white;
+    margin: 15px 0px;
+    text-transform: uppercase; }
+
+#team-section {
+  padding: 5rem 0rem;
+  text-align: center;
+  background: linear-gradient(rgba(215, 225, 233, 0.7), rgba(215, 225, 233, 0.7)), url(../resources/css/img/team-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #team-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; }
+  #team-section h3 {
+    margin: 10px 0px; }
+  #team-section .boxTwo {
+    margin-top: 5rem; }
+  #team-section h2 {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 6px;
+    padding: 20px 0px;
+    padding-top: 50px; }
+    #team-section h2::after {
+      content: "";
+      display: block;
+      background: tomato;
+      width: 8.5rem;
+      height: .3rem;
+      margin: auto;
+      margin-top: 2rem; }
+  #team-section p {
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    margin: 1.5rem 0rem;
+    color: gray; }
+  #team-section .social ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0rem 1rem; }
+  #team-section .fa {
+    color: white; }
+  #team-section .social ul li a:link i::before {
+    background: tomato;
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 1rem;
+    transition: .5s ease-in-out; }
+  #team-section .social ul li a:hover i::before {
+    transform: rotate(360deg); }
+
+#skils-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../resources/css/img/skill-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 0rem; }
+  #skils-section h2 {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 6px;
+    padding: 20px 0px;
+    color: black; }
+    #skils-section h2::after {
+      content: "";
+      display: block;
+      background: tomato;
+      width: 8.5rem;
+      height: .3rem;
+      margin: auto;
+      margin-top: 2rem; }
+  #skils-section p {
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    color: black; }
+  #skils-section svg.radial-progress text {
+    fill: #000; }
+  #skils-section svg.radial-progress circle {
+    stroke-width: 5; }
+  #skils-section svg.one circle {
+    stroke: #eb7d4b; }
+  #skils-section svg.two circle {
+    stroke: #30bae7; }
+  #skils-section svg.three circle {
+    stroke: #15c7a8; }
+  #skils-section svg.four circle {
+    stroke: #d74680; }
+  #skils-section h3 {
+    text-transform: uppercase; }
+  #skils-section .boxThree {
+    margin-top: 5rem; }
+
+#portfolio {
+  padding: 40px 0px;
+  background: linear-gradient(rgba(255, 221, 153, 0.79), rgba(255, 221, 153, 0.79)), url(../resources/css/img/portfolio-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #portfolio h2 {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 6px;
+    padding: 20px 0px;
+    color: black; }
+    #portfolio h2::after {
+      content: "";
+      display: block;
+      background: tomato;
+      width: 8.5rem;
+      height: .3rem;
+      margin: auto;
+      margin-top: 2rem; }
+  #portfolio p {
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    color: black; }
+  #portfolio img {
+    width: 400px;
+    height: auto; }
+  #portfolio .ct {
+    margin-top: 20px; }
+  #portfolio #load {
+    padding: 10px 40px;
+    border: none;
+    margin-top: 2rem;
+    color: white;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    background: #17c2a4;
+    border-bottom: 2px solid #14a58c; }
+
+#about {
+  padding: 40px 0px;
+  background: linear-gradient(rgba(215, 70, 128, 0.79), rgba(215, 70, 128, 0.79)), url(../resources/css/img/team-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #about h2 {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 6px;
+    padding: 20px 0px;
+    color: black; }
+    #about h2::after {
+      content: "";
+      display: block;
+      background: tomato;
+      width: 8.5rem;
+      height: .3rem;
+      margin: auto;
+      margin-top: 2rem; }
+  #about p {
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    color: black; }
+  #about img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; }
+
+#contact {
+  padding: 40px 0px;
+  background: linear-gradient(rgba(60, 84, 153, 0.79), rgba(60, 84, 153, 0.79)), url(../resources/css/img/testimonial-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #contact h2 {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 6px;
+    padding: 20px 0px;
+    color: black; }
+    #contact h2::after {
+      content: "";
+      display: block;
+      background: tomato;
+      width: 8.5rem;
+      height: .3rem;
+      margin: auto;
+      margin-top: 2rem; }
+  #contact p {
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    color: white; }
+  #contact input {
+    padding: 4px 42px;
+    margin: 3rem 1rem;
+    font-size: 1.4rem;
+    background: #273a71;
+    border-color: #273a71; }
+  #contact #sms {
+    background: #273a71;
+    border-color: #273a71; }
+  #contact #send {
+    padding: 10px 40px;
+    background: #30bae7;
+    border: none;
+    margin-top: 2rem;
+    color: white;
+    border-radius: 3px;
+    border-bottom: 2px solid #299ec5;
+    font-size: 1.6rem;
+    display: none; }
+
+#footer-section {
+  padding: 40px 0px;
+  background: #344b8e; }
+  #footer-section a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    transition: .6s ease; }
+    #footer-section a:hover {
+      border-bottom: 4px solid white; }
+
+@media only screen and (max-width: 480px) {
+  #portfolio img {
+    width: 100%;
+    height: 100%; }
+  #contact #sms {
+    width: 100%; } }
+
+@media only screen and (max-width: 768px) {
+  .portfolio img {
+    width: 100%;
+    height: 100%; }
+  #underline {
+    border-bottom: 2px solid white;
+    text-align: center; } }

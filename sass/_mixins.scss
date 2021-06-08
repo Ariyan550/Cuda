@@ -1,0 +1,80 @@
+
+@mixin headerTitle{
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 6px;
+  padding: 20px 0px;
+  &::after{
+    content:"";
+    display: block;
+    background: tomato;
+    width:8.5rem;
+    height: .3rem;
+    margin: auto;
+    margin-top:2rem;
+
+  }
+}
+
+
+
+@keyframes btn{
+    
+    25%{
+       padding: 10px 35px;
+    }
+    
+    50%{
+        padding: 10px 30px;
+      
+    }
+        
+    
+    100%{
+      padding: 10px 15px;
+        border-radius: 15px;
+        background: tomato;
+    }
+    
+    
+}
+
+
+
+@mixin para {
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  word-spacing: 4px;
+}
+
+
+@mixin commonBg{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin btnCommon{
+  background: #eb7d4b;
+  border:none;
+  padding: 10px 35px;
+  border-radius: 3px;
+  font-size: 13px;
+  color: white;
+  border-bottom: 2px solid #ce6e42;
+    animation-name: btn;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@mixin social{
+  background: tomato;
+  width:4rem;
+  height: 4rem;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 1rem;
+  transition: .5s ease-in-out;
+}
